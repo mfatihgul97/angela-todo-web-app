@@ -1,0 +1,122 @@
+html, body{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: springgreen;
+}
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    // color: white;
+    min-width: 60vh;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+
+    header{
+    
+        // position: relative;
+        width: 100%;
+        height: 200px;
+        // background-color: teal;
+        background-image: url(../background.jpg);
+        background-size: 100%;
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+            color: white;
+            font-weight: bold;
+        }
+        i{
+            font-size: 2em;
+            color: white;
+            align-self: flex-end;
+            margin: 25px;
+            cursor: pointer;
+            
+        }
+    
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        // background-color: mediumspringgreen;
+        input{
+            width: 80%;
+            height: 40px;
+            font-size: 2em;
+            border-radius: 25px;
+            text-indent: 10px;
+            &:focus{
+                outline: none;
+            }
+
+        }
+        i{
+            font-size: 3em;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        
+    }
+
+    article{
+        width: 100%;
+        height: auto;
+        // background-color: olivedrab;
+        font-size: 1.8em;
+        margin: 20px 0;
+        // display: flex;
+        overflow: scroll;
+        
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track{
+            background: #f1f1f1;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        ul{
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            li{
+                // display: block;
+                display: flex;
+                justify-content: space-between;
+                // flex-direction: row;
+                margin-bottom: 20px;
+                border-bottom: 1px solid black;
+                
+            }
+        }
+    }
+}
+.fas.fa-check-circle{
+    color: green;
+}
+.lineThrough{
+    text-decoration: line-through;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela ToDo</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/fontawesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+            <header>
+                <h1>ANGELA TODO</h1>
+                <i class="fas fa-sync"></i>
+            </header>
+            <main>
+                <input id="input" type="text" placeholder="Add to do" required>
+                <i class="fas fa-plus-circle" onclick="addToDo(input.value)"></i>
+            </main>
+            <article>
+
+                <ul id="list">
+                    <!-- <li> 
+                        <i class="far fa-check-circle"></i>
+                        <span>Something to do</span>
+                        <i class="fas fa-trash"></i>
+                    </li> -->
+
+                </ul>
+
+
+            </article>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
